@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Hero" package="com.sample.hero" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="Hero" />
+	
+	<source path="Source" />
+	
+	<haxelib name="starling" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<assets path="Assets" rename="assets" />
+	<app swf-version="11.8" />
+	
+</project>
