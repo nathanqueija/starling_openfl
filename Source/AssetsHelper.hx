@@ -13,7 +13,7 @@ class AssetsHelper{
     public static function getAtlas():TextureAtlas{
         if(gameTextureAtlas == null){
             var texture:Texture = Texture.fromBitmap( new Bitmap(Assets.getBitmapData ("assets/graphics/mySpritesheet.png")));
-            var xml:Xml = Xml.parse(Assets.getText ("assets/graphics/mySpritesheet.xml"));
+            var xml:Xml = Xml.parse(Assets.getText ("assets/graphics/mySpritesheet.xml")).firstElement();
             
             gameTextureAtlas = new TextureAtlas(texture, xml);
             trace(gameTextureAtlas.getTextures("fly_"));
